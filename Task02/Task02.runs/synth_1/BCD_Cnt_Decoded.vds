@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Nov  6 11:46:42 2026
-# Process ID: 14152
-# Current directory: C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1
+# Start of session at: Fri Nov  6 16:11:24 2026
+# Process ID: 21812
+# Current directory: C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1
 # Command line: vivado.exe -log BCD_Cnt_Decoded.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BCD_Cnt_Decoded.tcl
-# Log file: C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1/BCD_Cnt_Decoded.vds
-# Journal file: C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1\vivado.jou
+# Log file: C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1/BCD_Cnt_Decoded.vds
+# Journal file: C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1\vivado.jou
 # Running On        :OM1792-04
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :26200
@@ -19,11 +19,12 @@
 # Host memory       :68393 MB
 # Swap memory       :4294 MB
 # Total Virtual     :72688 MB
-# Available Virtual :58233 MB
+# Available Virtual :57322 MB
 #-----------------------------------------------------------
 source BCD_Cnt_Decoded.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.srcs/utils_1/imports/synth_1/BCD_Cnt_Decoded.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.srcs/utils_1/imports/synth_1/BCD_Cnt_Decoded.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 531.984 ; gain = 203.012
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.srcs/utils_1/imports/synth_1/BCD_Cnt_Decoded.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.srcs/utils_1/imports/synth_1/BCD_Cnt_Decoded.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top BCD_Cnt_Decoded -part xc7a35ticpg236-1L
 Starting synth_design
@@ -35,90 +36,93 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10112
+INFO: [Synth 8-7075] Helper process launched with PID 24508
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1385.012 ; gain = 450.441
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1384.762 ; gain = 448.758
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'BCD_Cnt_Decoded' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/task02_decoded.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'BCD_Cnt_Decoded' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/task02_decoded.vhd:13]
 	Parameter divisor bound to: 5000 - type: integer 
-INFO: [Synth 8-3491] module 'divider' declared at 'C:/Users/T00727415/Documents/Vivado/Lab07/Task02/clockdivider.vhd:5' bound to instance 'divider_inst0' of component 'divider' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/task02_decoded.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'divider' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/clockdivider.vhd:11]
+INFO: [Synth 8-3491] module 'divider' declared at 'C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/clockdivider.vhd:5' bound to instance 'divider_inst0' of component 'divider' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/task02_decoded.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'divider' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/clockdivider.vhd:11]
 	Parameter divisor bound to: 5000 - type: integer 
-WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/clockdivider.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'divider' (0#1) [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/clockdivider.vhd:11]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/clockdivider.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'divider' (0#1) [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/clockdivider.vhd:11]
 	Parameter divisor bound to: 5000 - type: integer 
-INFO: [Synth 8-3491] module 'divider' declared at 'C:/Users/T00727415/Documents/Vivado/Lab07/Task02/clockdivider.vhd:5' bound to instance 'divider_inst1' of component 'divider' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/task02_decoded.vhd:44]
-INFO: [Synth 8-3491] module 'BCD_Cnt' declared at 'C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.vhd:5' bound to instance 'BCD_Cnt_inst' of component 'BCD_Cnt' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/task02_decoded.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'BCD_Cnt' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'BCD_Cnt' (0#1) [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.vhd:12]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/T00727415/Documents/Vivado/Lab07/Task02/ssegdecoder.vhd:5' bound to instance 'decoder_inst' of component 'decoder' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/task02_decoded.vhd:51]
-INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/ssegdecoder.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'decoder' (0#1) [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/ssegdecoder.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'BCD_Cnt_Decoded' (0#1) [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/task02_decoded.vhd:12]
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.vhd:16]
-WARNING: [Synth 8-7129] Port D[3] in module BCD_Cnt is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D[2] in module BCD_Cnt is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D[1] in module BCD_Cnt is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D[0] in module BCD_Cnt is either unconnected or has no load
+INFO: [Synth 8-3491] module 'divider' declared at 'C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/clockdivider.vhd:5' bound to instance 'divider_inst1' of component 'divider' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/task02_decoded.vhd:43]
+INFO: [Synth 8-3491] module 'BCD_Cnt' declared at 'C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.vhd:5' bound to instance 'BCD_Cnt_inst' of component 'BCD_Cnt' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/task02_decoded.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'BCD_Cnt' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.vhd:12]
+WARNING: [Synth 8-614] signal 'clear_last' is read in the process but is not in the sensitivity list [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'BCD_Cnt' (0#1) [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.vhd:12]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/ssegdecoder.vhd:5' bound to instance 'decoder_inst' of component 'decoder' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/task02_decoded.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/ssegdecoder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (0#1) [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/ssegdecoder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'BCD_Cnt_Decoded' (0#1) [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/task02_decoded.vhd:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1494.418 ; gain = 559.848
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1493.754 ; gain = 557.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1494.418 ; gain = 559.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1493.754 ; gain = 557.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1494.418 ; gain = 559.848
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1493.754 ; gain = 557.750
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.418 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1493.754 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc]
-Finished Parsing XDC File [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BCD_Cnt_Decoded_propImpl.xdc].
+Parsing XDC File [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clear_IBUF'. [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BCD_Cnt_Decoded_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/BCD_Cnt_Decoded_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1576.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.742 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1576.789 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1498.742 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticpg236-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'clear_last_reg' [C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.vhd:24]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
 +---Registers : 
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input    8 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -135,31 +139,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port clk in module BCD_Cnt_Decoded is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D[3] in module BCD_Cnt_Decoded is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D[2] in module BCD_Cnt_Decoded is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D[1] in module BCD_Cnt_Decoded is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D[0] in module BCD_Cnt_Decoded is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -177,37 +176,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -220,32 +219,45 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |IBUF |     2|
-|2     |OBUF |    10|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    26|
+|3     |LUT1   |     5|
+|4     |LUT2   |    43|
+|5     |LUT3   |     7|
+|6     |LUT4   |     7|
+|7     |LUT5   |     3|
+|8     |FDRE   |    70|
+|9     |LDP    |     1|
+|10    |IBUF   |     9|
+|11    |OBUF   |     8|
++------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1576.789 ; gain = 559.848
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1576.789 ; gain = 642.219
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1498.742 ; gain = 557.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.742 ; gain = 562.738
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1576.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1500.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1576.789 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1504.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  LDP => LDPE (inverted pins: G): 1 instance 
 
-Synth Design complete | Checksum: a5abccba
+Synth Design complete | Checksum: 597a4fd2
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+34 Infos, 5 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1576.789 ; gain = 1041.012
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1576.789 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1/BCD_Cnt_Decoded.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1504.453 ; gain = 967.953
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1504.453 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1/BCD_Cnt_Decoded.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file BCD_Cnt_Decoded_utilization_synth.rpt -pb BCD_Cnt_Decoded_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 11:47:08 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 16:11:49 2026...

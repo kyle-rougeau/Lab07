@@ -1,13 +1,13 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Fri Nov  6 11:47:51 2026
+| Date         : Fri Nov  6 16:12:14 2026
 | Host         : OM1792-04 running 64-bit major release  (build 9200)
 | Command      : report_drc -file BCD_Cnt_Decoded_drc_opted.rpt -pb BCD_Cnt_Decoded_drc_opted.pb -rpx BCD_Cnt_Decoded_drc_opted.rpx
 | Design       : BCD_Cnt_Decoded
 | Device       : xc7a35ticpg236-1L
 | Speed File   : -1L
-| Design State : Fully Placed
+| Design State : Synthesized
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 Report DRC
@@ -24,11 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
+             Violations found: 2
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PLCK-12  | Warning  | Clock Placer Checks                                 | 1          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -44,6 +45,17 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clear_IBUF_inst (IBUF.O) is locked to W19
+	clear_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
 Related violations: <none>
 
 

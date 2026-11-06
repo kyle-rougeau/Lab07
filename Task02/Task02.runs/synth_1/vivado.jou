@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Nov  6 11:46:42 2026
-# Process ID: 14152
-# Current directory: C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1
+# Start of session at: Fri Nov  6 16:11:24 2026
+# Process ID: 21812
+# Current directory: C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1
 # Command line: vivado.exe -log BCD_Cnt_Decoded.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BCD_Cnt_Decoded.tcl
-# Log file: C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1/BCD_Cnt_Decoded.vds
-# Journal file: C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1\vivado.jou
+# Log file: C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1/BCD_Cnt_Decoded.vds
+# Journal file: C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1\vivado.jou
 # Running On        :OM1792-04
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :26200
@@ -19,6 +19,6 @@
 # Host memory       :68393 MB
 # Swap memory       :4294 MB
 # Total Virtual     :72688 MB
-# Available Virtual :58233 MB
+# Available Virtual :57322 MB
 #-----------------------------------------------------------
 source BCD_Cnt_Decoded.tcl -notrace

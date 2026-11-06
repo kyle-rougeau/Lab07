@@ -11,20 +11,27 @@ end BCD_Cnt;
 
 architecture behv of BCD_Cnt is
 Signal count : UNSIGNED (3 downto 0) := "0000";
+Signal clear_last : STD_LOGIC := '0';
 begin
 
+process(count)
+begin
 Q <= count;
+end process;
 
 process(clk, clear)
 begin
+if clear = '1' and clear_last = '0' then
+ count <= "0000";
+ clear_last <= '1';
+elsif clear = '0' then
+ clear_last <= '0';
+end if;
 if rising_edge(clk)then
  Co <= '0';
 if enable = '1' then
  if load = '1' then
-  assert D < 10
-  report "D Cannot be greater than 9 (1001)"
-  severity warning;
-  count <= D;
+ count <= D;
  elsif up = '1' then
   if count = 9 then
    Co <= '1';
@@ -42,9 +49,7 @@ if enable = '1' then
  end if;
 end if;
 end if;
-if rising_edge(clear) then
- count <= "0000";
-end if;
+
 end process;
 
 end behv;

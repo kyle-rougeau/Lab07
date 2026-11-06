@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/impl_1/BCD_Cnt_Decoded.tcl"
+  variable script "C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/impl_1/BCD_Cnt_Decoded.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,6 +97,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -106,10 +108,10 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 6
-  set_param xicom.use_bs_reader 1
+  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param runs.launchOptions { -jobs 12  }
   open_checkpoint BCD_Cnt_Decoded_routed.dcp
-  set_property webtalk.parent_dir C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.cache/wt} [current_project]
 set_property TOP BCD_Cnt_Decoded [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

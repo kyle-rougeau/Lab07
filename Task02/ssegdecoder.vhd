@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity decoder is
-Port ( in_vec : in UNSIGNED (7 downto 0);
+Port ( in_vec : in UNSIGNED (3 downto 0);
        out_vec : out UNSIGNED (7 downto 0) );
 end decoder;
 

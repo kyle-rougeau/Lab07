@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/T00727415/Documents/Vivado/Lab07/Task02/Task02.runs/synth_1'
+HD_PWD='C:/Users/T00727415/OneDrive - Thompson Rivers University/Documents/Classwork/Lab07/Task02/Task02.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
