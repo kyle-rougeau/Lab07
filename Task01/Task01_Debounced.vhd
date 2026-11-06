@@ -10,7 +10,7 @@ end task01_db;
 architecture comp of task01_db is
 Signal button_db : STD_LOGIC := '0';
 
-component mydebounce
+component debounceFilter
  Generic ( threshold : INTEGER );
  Port ( clk : in STD_LOGIC;
         bouncy : in STD_LOGIC;
@@ -24,7 +24,7 @@ end component;
 
 begin
 
-mydebounce_inst : mydebounce
+mydebounce_inst : debounceFilter
  Generic Map ( threshold => 250000 )
  Port Map ( clk => clk, bouncy => button, debounced => button_db );
 

@@ -31,7 +31,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity debounceFilter is
-generic (threshold: INTEGER := 20);
+generic (threshold: INTEGER);
     Port ( clk : in STD_LOGIC;
            bouncy : in STD_LOGIC;
            debounced : out STD_LOGIC);
