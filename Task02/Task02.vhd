@@ -23,7 +23,7 @@ if enable = '1' then
  if load = '1' then
   assert D < 10
   report "D Cannot be greater than 9 (1001)"
-  severity failure;
+  severity warning;
   count <= D;
  elsif up = '1' then
   if count = 9 then

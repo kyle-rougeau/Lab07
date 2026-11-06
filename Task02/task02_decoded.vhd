@@ -5,7 +5,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity BCD_Cnt_Decoded is
 Port ( clk, enable, load, up, clear : in STD_LOGIC;
        D : in UNSIGNED (3 downto 0);
-       to_sseg : out UNSIGNED (7 downto 0) );
+       to_sseg : out UNSIGNED (7 downto 0);
+       debug0, debug1 : out STD_LOGIC );
 end BCD_Cnt_decoded;
 
 architecture comp of BCD_Cnt_Decoded is
@@ -33,12 +34,15 @@ Signal clk_buffer0, clk_buffer1 : STD_LOGIC := '0';
 
 begin
 
+debug0 <= enable;
+debug1 <= load;
+
 divider_inst0 : divider
-Generic Map (divisor => 50)
+Generic Map (divisor => 5000)
 Port Map (clk_in => clk, clk_out => clk_buffer0);
 
 divider_inst1 : divider
-Generic Map (divisor => 50)
+Generic Map (divisor => 5000)
 Port Map (clk_in => clk_buffer0, clk_out => clk_buffer1);
 
 BCD_Cnt_inst : BCD_Cnt

@@ -14,27 +14,27 @@ process(in_vec)
 begin
 case to_integer(in_vec) is
 when 0 =>
-out_vec <= "11111100";
+out_vec <= "00000011";
 when 1 =>
-out_vec <= "01100000";
+out_vec <= "10011111";
 when 2 =>
-out_vec <= "11011010";
+out_vec <= "00100101";
 when 3 =>
-out_vec <= "11110010";
+out_vec <= "00001101";
 when 4 =>
-out_vec <= "01100110";
+out_vec <= "10011001";
 when 5 =>
-out_vec <= "10110110";
+out_vec <= "01001001";
 when 6 =>
-out_vec <= "10111110";
+out_vec <= "01000001";
 when 7 =>
-out_vec <= "11100000";
+out_vec <= "00011111";
 when 8 =>
-out_vec <= "11111110";
+out_vec <= "00000001";
 when 9 =>
-out_vec <= "11100110";
+out_vec <= "00011001";
 when others =>
-out_vec <= "11111111";
+out_vec <= "00000000";
 end case;
 end process;
 

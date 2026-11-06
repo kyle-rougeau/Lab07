@@ -13,8 +13,6 @@ Signal count : INTEGER := 0;
 Signal state : STD_LOGIC := '0';
 begin
 
-clk_out <= state;
-
 process(clk_in)
 begin
 if rising_edge(clk_in) then
@@ -25,6 +23,7 @@ if rising_edge(clk_in) then
   count <= 0;
  end if;
 end if;
+clk_out <= state;
 end process;
 
 end behv;

@@ -1,0 +1,34 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Nov  6 11:48:02 2026
+| Host         : OM1792-04 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file BCD_Cnt_Decoded_methodology_drc_routed.rpt -pb BCD_Cnt_Decoded_methodology_drc_routed.pb -rpx BCD_Cnt_Decoded_methodology_drc_routed.rpx
+| Design       : BCD_Cnt_Decoded
+| Device       : xc7a35ticpg236-1L
+| Speed File   : -1L
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
+
+2. REPORT DETAILS
+-----------------
+
