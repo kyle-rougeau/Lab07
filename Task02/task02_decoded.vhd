@@ -37,11 +37,11 @@ Signal clk_buffer0, clk_buffer1 : STD_LOGIC := '0';
 begin
 
 divider_inst0 : divider
-Generic Map (divisor => 5000)
+Generic Map (divisor => 5)
 Port Map (clk_in => clk, clk_out => clk_buffer0);
 
 divider_inst1 : divider
-Generic Map (divisor => 5000)
+Generic Map (divisor => 5)
 Port Map (clk_in => clk_buffer0, clk_out => clk_buffer1);
 
 BCD_Cnt_inst : BCD_Cnt
