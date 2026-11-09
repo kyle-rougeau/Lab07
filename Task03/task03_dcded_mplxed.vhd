@@ -6,7 +6,7 @@ entity dd_bcd_for_sseg is
 Port ( Clk, Enable, Load, Up, Clear : in STD_LOGIC;
        D0, D1 : in UNSIGNED (3 downto 0);
        pattern : out UNSIGNED (7 downto 0);
-       selection  : out UNSIGNED (1 downto 0) );
+       selection  : out UNSIGNED (3 downto 0) := "1111" );
 end dd_bcd_for_sseg;
 
 architecture comp of dd_bcd_for_sseg is
@@ -30,16 +30,16 @@ Port ( clk_in : in STD_LOGIC;
 end component;
 
 Signal digit0, digit1, to_display : UNSIGNED (3 downto 0) := "0000";
-Signal slowclock, slowerclock, state : STD_LOGIC := '0';
+Signal slowclock, slowerclock : STD_LOGIC := '0';
 
 begin
 
 divider_inst0 : divider
-Generic Map (divisor => 2)
+Generic Map (divisor => 5000)
 Port Map (clk_in => clk, clk_out => slowclock);
 
 divider_inst1 : divider
-Generic Map (divisor => 2)
+Generic Map (divisor => 5000)
 Port Map (clk_in => slowclock, clk_out => slowerclock);
 
 DD_BCD_Cnt_inst : DD_BCD_Cnt
@@ -48,13 +48,14 @@ Port Map (clk => slowerclock, enable => enable, load => load, up => up, clear =>
 decoder_inst : decoder
 Port Map (in_vec => to_display, out_vec => pattern);
 
-selection <= "01" when state = '0' else "10";
-to_display <= digit0 when state = '0' else digit1;
-
-process(Clk)
+process(slowclock)
 begin
-if rising_edge(Clk) then
- state <= not state;
+if slowclock = '0' then
+ selection (1 downto 0) <= "10";
+ to_display <= digit0;
+else
+ selection (1 downto 0) <= "01";
+ to_display <= digit1;
 end if;
 end process;
 
